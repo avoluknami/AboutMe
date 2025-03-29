@@ -1,0 +1,228 @@
+:root {
+    --gradient: linear-gradient(
+        45deg,
+        #c6ecc7,
+        #f7bbc9,
+        #faf0cd,
+        #f7eca9,
+        #f598a8,
+        #f6edb2,
+        #FDE5D4
+    );
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: var(--gradient);
+    background-size: 400% 400%;
+    animation: bg-animation 5s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+header{
+    font-family: "Merriweather", serif;
+    font-size:17px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    overflow:hidden;
+   
+}
+.navbar a {
+    color:#445D48;
+    text-decoration: none;
+    display:block;
+    padding:20px;
+    text-align:center;
+    
+    
+}
+.navbar a:hover {
+    background-color: #e3c5af;
+    cursor:pointer;
+}
+.navbar li {
+    float:left;
+}
+
+
+h1 {
+    display: flex;
+    font-size:100px;
+    color:#445D48;
+    font-family: "Great Vibes", cursive;
+    justify-content: center;
+    padding-top:20px;
+    margin-top:-10px;
+}
+
+.slider {
+    position: relative;
+    width: 736px;
+    height: 416px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-left:400px;
+    margin-top:20px;
+}
+
+/* Настройки слайдов */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: slideAnimation 21s infinite;
+}
+
+/* Последовательное появление слайдов */
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+.slide:nth-child(2) {
+    animation-delay: 3s;
+}
+.slide:nth-child(3) {
+    animation-delay: 6s;
+}
+.slide:nth-child(4) {
+    animation-delay: 9s;
+}
+.slide:nth-child(5) {
+    animation-delay: 12s;
+}
+.slide:nth-child(6) {
+    animation-delay: 15s;
+}
+.slide:nth-child(7) {
+    animation-delay: 18s;
+}
+
+/* Анимация появления и исчезновения */
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    10% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    30% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    40% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+    
+    /* Ключевые кадры для анимации */
+    @keyframes slideAnimation {
+      0% {
+        opacity: 0;
+        transform: scale(1.2);
+      }
+      10% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      33.33% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      43.33% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+    }
+
+.countries-container {
+    position:absolute;
+    width:50%;
+    height:21vh;
+    margin:10px 0  0 370px;
+    border-radius:40px;
+    color:#445D48;
+}
+
+.contries-text {
+    padding:30px;
+    font-size:20px;
+    line-height: 30px;
+}
+
+.flower3{
+    position:absolute;
+    width:100px;
+    height:100px;
+    margin:-120px 400px;
+}
+.flower4{
+    position:absolute;
+    width:100px;
+    height:100px;
+    margin:-120px 1000px;
+}
+
+.ticket{
+    position:absolute;
+    width:150px;
+    height:300px;
+    margin-left:1250px;
+}
+.airplane{
+    position:absolute;
+    width:270px;
+    height:200px;
+    margin-left:50px;
+    top:150px;
+}
+.eifel{
+    position:absolute;
+    width:200px;
+    height:250px;
+    margin-left:50px;
+    margin-top:370px;
+}
+.colizei{
+    position:absolute;
+    width:250px;
+    height:250px;
+    margin-left:100px;
+    margin-top:140px;
+}
+.world{
+    position:absolute;
+    width:250px;
+    height:250px;
+    margin-left:1200px;
+    margin-top:400px;
+}
+
